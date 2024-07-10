@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink; /* Fondo rosado */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    flex-direction: column;
+}
+
+.countdown-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.countdown-container h1 {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.countdown div {
+    background: #ff69b4;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+    min-width: 60px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.panda {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Ajuste para el padding y el borde */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Para que el botón ocupe el ancho completo */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 20px;
+    color: red;
+    transition: opacity 0.5s ease; /* Transición suave */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+#message.visible {
+    opacity: 1; /* Visible cuando tiene la clase 'visible' */
+}

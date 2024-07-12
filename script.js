@@ -21,7 +21,17 @@ function checkPassword() {
 // Función para la cuenta regresiva
 function startCountdown() {
     const countdownElement = document.getElementById('countdown');
+    const specialMessage = document.getElementById('special-message');
     const targetDate = new Date('July 14, 2024 00:00:00').getTime();
+
+    const messages = [
+        {time: 23 * 60 * 60 * 1000, text: "Ola mi cielo, ya queda menos de un día, debes estar atenta a las demás horas"},
+        {time: 15 * 60 * 60 * 1000, text: "Amorcitooo, quería deshirte que te amo mucho y eri muy linda tu, vuelven cuando queden 7 horas shao"},
+        {time: 7 * 60 * 60 * 1000, text: "Ola soy yo otra vez actualizando el estado, te amo musho como dije hace unas horas atrás y esho, ahora regresa cuando quede 1 hora shao"},
+        {time: 1 * 60 * 60 * 1000, text: "KEDAAAAA POCO, AYUDAAAA SHAO, vuelve a los 5 minutos finales"},
+        {time: 30 * 60 * 1000, text: "¡Media hora restante!"},
+        {time: 5 * 60 * 1000, text: "Ola ¿Estas lista? porque yo siii, akiii vamos TIIIIIIII"},
+    ];
 
     const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
@@ -39,6 +49,15 @@ function startCountdown() {
             <div>${seconds}s</div>
         `;
 
+        // Mostrar mensajes especiales en los tiempos especificados
+        for (const message of messages) {
+            if (distance <= message.time && distance > message.time - 1000) {
+                specialMessage.innerText = message.text;
+                specialMessage.style.display = 'block';
+                break;
+            }
+        }
+
         if (distance < 0) {
             clearInterval(countdownInterval);
             countdownElement.innerHTML = "La página está desbloqueada";
@@ -51,9 +70,3 @@ function startCountdown() {
 document.addEventListener('DOMContentLoaded', (event) => {
     startCountdown();
 });
-
-
-function showWord(word) {
-    alert(word);
-}
-

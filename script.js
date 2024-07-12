@@ -26,7 +26,7 @@ function startCountdown() {
 
     const messages = [
         {time: 23 * 60 * 60 * 1000, text: "Ola mi cielo, ya queda menos de un día, debes estar atenta a las demás horas"},
-        {time: 1 * 24 * 60 * 60 * 1000 - 15 * 60 * 60 * 1000 - 33 * 60 * 1000, text: "Error 404"},
+        {time: (24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000) + (20 * 60 * 1000), text: "Error 404"},
         {time: 15 * 60 * 60 * 1000, text: "Amorcitooo, quería deshirte que te amo mucho y eri muy linda tu, vuelven cuando queden 7 horas shao"},
         {time: 7 * 60 * 60 * 1000, text: "Ola soy yo otra vez actualizando el estado, te amo musho como dije hace unas horas atrás y esho, ahora regresa cuando quede 1 hora shao"},
         {time: 1 * 60 * 60 * 1000, text: "KEDAAAAA POCO, AYUDAAAA SHAO, vuelve a los 5 minutos finales"},

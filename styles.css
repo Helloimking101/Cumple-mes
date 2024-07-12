@@ -43,6 +43,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.special-message {
+    font-size: 1.2em;
+    color: #ff69b4;
+    margin-top: 20px;
+}
+
 .container {
     text-align: center;
     background: white;
